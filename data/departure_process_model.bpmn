@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:definitions xmlns:ns0="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns1="http://camunda.org/schema/modeler/1.0" xmlns:ns2="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns3="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns4="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_0prm2dc" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.12.0" ns1:executionPlatform="Camunda Platform" ns1:executionPlatformVersion="7.15.0">
+  <ns0:process id="Process_1tuecib" isExecutable="true">
+    <ns0:startEvent id="StartEvent_1">
+      <ns0:outgoing>Flow_10nztqc</ns0:outgoing>
+    </ns0:startEvent>
+    <ns0:task id="Activity_1eu3r8u" name="A119">
+      <ns0:incoming>Flow_10nztqc</ns0:incoming>
+      <ns0:outgoing>Flow_1pslqm0</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_0wt4piq" name="A56">
+      <ns0:incoming>Flow_1pslqm0</ns0:incoming>
+      <ns0:outgoing>Flow_1xkygd7</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_0qls5m0" name="A1">
+      <ns0:incoming>Flow_1xkygd7</ns0:incoming>
+      <ns0:outgoing>Flow_0m7iiez</ns0:outgoing>
+    </ns0:task>
+    <ns0:endEvent id="Event_0nzp4i3">
+      <ns0:incoming>Flow_0m7iiez</ns0:incoming>
+    </ns0:endEvent>
+    <ns0:sequenceFlow id="Flow_0m7iiez" sourceRef="Activity_0qls5m0" targetRef="Event_0nzp4i3" />
+    <ns0:sequenceFlow id="Flow_10nztqc" sourceRef="StartEvent_1" targetRef="Activity_1eu3r8u" />
+    <ns0:sequenceFlow id="Flow_1pslqm0" sourceRef="Activity_1eu3r8u" targetRef="Activity_0wt4piq" />
+    <ns0:sequenceFlow id="Flow_1xkygd7" sourceRef="Activity_0wt4piq" targetRef="Activity_0qls5m0" />
+  </ns0:process>
+  <ns2:BPMNDiagram id="BPMNDiagram_1">
+    <ns2:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1tuecib">
+      <ns2:BPMNEdge id="Flow_0m7iiez_di" bpmnElement="Flow_0m7iiez">
+        <ns3:waypoint x="690" y="120" />
+        <ns3:waypoint x="742" y="120" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_10nztqc_di" bpmnElement="Flow_10nztqc">
+        <ns3:waypoint x="188" y="120" />
+        <ns3:waypoint x="240" y="120" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_1pslqm0_di" bpmnElement="Flow_1pslqm0">
+        <ns3:waypoint x="340" y="120" />
+        <ns3:waypoint x="410" y="120" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_1xkygd7_di" bpmnElement="Flow_1xkygd7">
+        <ns3:waypoint x="510" y="120" />
+        <ns3:waypoint x="590" y="120" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <ns4:Bounds x="152" y="102" width="36" height="36" />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_1eu3r8u_di" bpmnElement="Activity_1eu3r8u">
+        <ns4:Bounds x="240" y="80" width="100" height="80" />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_0wt4piq_di" bpmnElement="Activity_0wt4piq">
+        <ns4:Bounds x="410" y="80" width="100" height="80" />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_0qls5m0_di" bpmnElement="Activity_0qls5m0">
+        <ns4:Bounds x="590" y="80" width="100" height="80" />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Event_0nzp4i3_di" bpmnElement="Event_0nzp4i3">
+        <ns4:Bounds x="742" y="102" width="36" height="36" />
+      </ns2:BPMNShape>
+    </ns2:BPMNPlane>
+  </ns2:BPMNDiagram>
+</ns0:definitions>
